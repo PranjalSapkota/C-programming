@@ -2,10 +2,13 @@
 #include <string.h>
 #include "cs50.h"
 int main( int argc ,string argv[])
-/* here argc is a argument count which count how many words human type at the prompt.similarly argv is a argument vector 
-which list the command line argument.
-whatevers the name of your program is always accessible in argv at location 0. */
-
 {
-  printf("hello,%s\n",argv[1]);
+  for (int  i = 1; i <= argc; i++)
+  {
+    printf("%s\t",argv[i]);
+  }
+  /* here we make our program more efficent because initially we donot know how many word user type so whatever the user
+  type we return the same thing to the user in this program.
+  Note:if we print invalid argv location then it return us null value.
+  */
 }
